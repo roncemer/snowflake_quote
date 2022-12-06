@@ -1,3 +1,9 @@
+# snowflake_quote
+# A Python3 function to properly escape and quote string literals for Snowflake
+#
+# Copyright (c) 2022 Ronald B. Cemer
+# Licensed under the MIT license.
+
 import os
 import sys
 
