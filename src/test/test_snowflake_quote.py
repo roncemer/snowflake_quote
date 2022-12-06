@@ -3,6 +3,8 @@
 #
 # Copyright (c) 2022 Ronald B. Cemer
 # Licensed under the MIT license.
+#
+# Project: https://github.com/roncemer/snowflake_quote
 
 import os
 import sys
