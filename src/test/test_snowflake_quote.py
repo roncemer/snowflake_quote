@@ -57,6 +57,14 @@ for cc in range(0, 256):
         num_errors = num_errors + 1
     print("Hex value: %0.2x, quoted string: %s, expected: %s%s" % (cc, res, expected, error))
 
+expected = "NULL"
+error = ""
+res = snowflake_quote(None)
+if res != expected:
+    error = " *** ERRROR ***"
+    num_errors = num_errors + 1
+print("None type, quoted string: %s, expected: %s%s" % (res, expected, error))
+
 if num_errors > 0:
     print("%d ERRORS!" % (num_errors), file=sys.stderr)
     sys.exit(10)
